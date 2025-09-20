@@ -24,7 +24,7 @@ from ...utils import logging
 logger = logging.get_logger(__name__)
 
 
-class Wav2Vec2Config(PretrainedConfig):
+class Wav2Vec2ProConfig(PretrainedConfig):
     r"""
     This is the configuration class to store the configuration of a [`Wav2Vec2Model`]. It is used to instantiate an
     Wav2Vec2 model according to the specified arguments, defining the model architecture. Instantiating a configuration

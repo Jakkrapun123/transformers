@@ -402,6 +402,7 @@ MODEL_MAPPING_NAMES = OrderedDict(
         ("wav2vec2-bert", "Wav2Vec2BertModel"),
         ("wav2vec2-conformer", "Wav2Vec2ConformerModel"),
         ("wavlm", "WavLMModel"),
+        ("wav2vec2pro", "Wav2Vec2ProModel"),
         ("whisper", "WhisperModel"),
         ("xclip", "XCLIPModel"),
         ("xcodec", "XcodecModel"),
@@ -1576,6 +1577,7 @@ MODEL_FOR_CTC_MAPPING_NAMES = OrderedDict(
         ("wav2vec2-bert", "Wav2Vec2BertForCTC"),
         ("wav2vec2-conformer", "Wav2Vec2ConformerForCTC"),
         ("wavlm", "WavLMForCTC"),
+        ("wav2vec2pro", "Wav2Vec2ProForCTC")
     ]
 )
 

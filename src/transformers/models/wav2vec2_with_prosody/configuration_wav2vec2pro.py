@@ -199,7 +199,7 @@ class Wav2Vec2Config(PretrainedConfig):
     >>> configuration = model.config
     ```"""
 
-    model_type = "wav2vec2"
+    model_type = "wav2vec2pro"
 
     def __init__(
         self,

@@ -55,7 +55,7 @@ from ...utils import (
     is_torch_flex_attn_available,
     logging,
 )
-from .configuration_wav2vec2 import Wav2Vec2Config
+from .configuration_wav2vec2 import Wav2Vec2ProConfig
 
 
 WAV2VEC2_ADAPTER_PT_FILE = "adapter.{}.bin"
@@ -1343,7 +1343,7 @@ class Wav2Vec2PreTrainedModel(PreTrainedModel):
 
 
 @auto_docstring
-class Wav2Vec2Model(Wav2Vec2PreTrainedModel):
+class Wav2VecPro2Model(Wav2Vec2PreTrainedModel):
     def __init__(self, config: Wav2Vec2Config):
         super().__init__(config)
         self.config = config
@@ -1764,7 +1764,7 @@ class Wav2Vec2ForMaskedLM(Wav2Vec2PreTrainedModel):
     Wav2Vec2 Model with a `language modeling` head on top for Connectionist Temporal Classification (CTC).
     """
 )
-class Wav2Vec2ForCTC(Wav2Vec2PreTrainedModel):
+class Wav2Vec2ProForCTC(Wav2Vec2PreTrainedModel):
     def __init__(self, config, target_lang: Optional[str] = None):
         r"""
         target_lang (`str`, *optional*):
@@ -2348,11 +2348,11 @@ class Wav2Vec2ForXVector(Wav2Vec2PreTrainedModel):
 
 __all__ = [
     "Wav2Vec2ForAudioFrameClassification",
-    "Wav2Vec2ForCTC",
+    "Wav2Vec2ProForCTC",
     "Wav2Vec2ForMaskedLM",
     "Wav2Vec2ForPreTraining",
     "Wav2Vec2ForSequenceClassification",
     "Wav2Vec2ForXVector",
-    "Wav2Vec2Model",
+    "Wav2Vec2ProModel",
     "Wav2Vec2PreTrainedModel",
 ]
